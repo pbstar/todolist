@@ -211,6 +211,10 @@ export default {
     this.allList = JSON.parse(localStorage.getItem("allList")) || [];
     this.date = this.formatDate(new Date());
   },
+  mounted() {
+    let loading = document.getElementById("zvie_base_loading");
+    loading.style.display = "none";
+  },
   methods: {
     formatDate(date) {
       return `${date.getFullYear()}/${date.getMonth() + 1}/${date.getDate()}`;
