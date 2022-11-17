@@ -206,7 +206,7 @@ export default {
 .top {
   display: flex;
   justify-content: space-between;
-  margin: 10px 9px 10px 8px;
+  margin: 10px 8px;
 }
 
 .top .van-button--small {
